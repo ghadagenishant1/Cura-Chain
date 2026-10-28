@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hospital-config
+  namespace: default
+data:
+  DATABASE_URL: "postgresql://user:password@postgres:5432/hospital_blockchain"
+  FABRIC_CHANNEL_NAME: "hospitalchannel"
+  FABRIC_CHAINCODE_NAME: "hospitalrecords"
